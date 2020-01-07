@@ -6,7 +6,7 @@ fix_pdb () {
 	case $OPTION in 
 	    p) 
 	       echo $OPTARG
-	       python model_pdb.py $OPTARG
+	       python clean_pdb.py $OPTARG
 	       ;;
 	    s) 
 	       echo $OPTARG

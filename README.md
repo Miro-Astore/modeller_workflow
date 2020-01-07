@@ -6,4 +6,4 @@ workflow is as follows.
 
 2. construct alignment. use external tools such as uniprot and crystal for this.
 
-3. bash run.sh will run the actual homology modelling. Keep in mind that myloop.py is the loop modelling class, this is where you need to write selection text for loop refinement 
+3. bash run.sh will run the actual homology modelling. Keep in mind that myloop.py is the loop modelling class, this is where you need to write selection text for loop refinement. Will output everything to modeller.log 
