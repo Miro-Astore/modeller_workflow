@@ -1,71 +1,63 @@
-
-                         MODELLER 9.19, 2017/07/19, r11078
-
-     PROTEIN STRUCTURE MODELLING BY SATISFACTION OF SPATIAL RESTRAINTS
-
-
-                     Copyright(c) 1989-2017 Andrej Sali
-                            All Rights Reserved
-
-                             Written by A. Sali
-                               with help from
-              B. Webb, M.S. Madhusudhan, M-Y. Shen, G.Q. Dong,
-          M.A. Marti-Renom, N. Eswar, F. Alber, M. Topf, B. Oliva,
-             A. Fiser, R. Sanchez, B. Yerkovich, A. Badretdinov,
-                     F. Melo, J.P. Overington, E. Feyfant
-                 University of California, San Francisco, USA
-                    Rockefeller University, New York, USA
-                      Harvard University, Cambridge, USA
-                   Imperial Cancer Research Fund, London, UK
-              Birkbeck College, University of London, London, UK
+>> Summary of successfully produced models:
+Filename                          molpdf
+----------------------------------------
+10_added.B99990001.pdb        6041.23926
+10_added.B99990002.pdb        5811.68604
+10_added.B99990003.pdb        5978.63770
+10_added.B99990004.pdb        5517.58057
+10_added.B99990005.pdb        5774.05371
 
 
-Kind, OS, HostName, Kernel, Processor: 4, Linux miro-desktop 4.15.0-72-generic x86_64
-Date and time of compilation         : 2017/07/19 14:40:43
-MODELLER executable type             : x86_64-intel8
-Job starting time (YY/MM/DD HH:MM:SS): 2020/01/07 21:38:43
-
-openf___224_> Open           $(LIB)/restyp.lib
-openf___224_> Open           ${MODINSTALL9v19}/modlib/resgrp.lib
-rdresgr_266_> Number of residue groups:        2
-openf___224_> Open           ${MODINSTALL9v19}/modlib/sstruc.lib
-
-Dynamically allocated memory at   amaxlibraries [B,KiB,MiB]:       191566     187.076     0.183
-
-Dynamically allocated memory at   amaxlibraries [B,KiB,MiB]:       192094     187.592     0.183
-openf___224_> Open           ${MODINSTALL9v19}/modlib/resdih.lib
-
-Dynamically allocated memory at   amaxlibraries [B,KiB,MiB]:       240694     235.053     0.230
-rdrdih__263_> Number of dihedral angle types         :        9
-              Maximal number of dihedral angle optima:        3
-              Dihedral angle names                   :  Alph Phi Psi Omeg chi1 chi2 chi3 chi4 chi5
-openf___224_> Open           ${MODINSTALL9v19}/modlib/radii.lib
-
-Dynamically allocated memory at   amaxlibraries [B,KiB,MiB]:       253994     248.041     0.242
-openf___224_> Open           ${MODINSTALL9v19}/modlib/radii14.lib
-openf___224_> Open           ${MODINSTALL9v19}/modlib/af_mnchdef.lib
-rdwilmo_274_> Mainchain residue conformation classes:  APBLE
-openf___224_> Open           ${MODINSTALL9v19}/modlib/mnch.lib
-rdclass_257_> Number of classes:        5
-openf___224_> Open           ${MODINSTALL9v19}/modlib/mnch1.lib
-openf___224_> Open           ${MODINSTALL9v19}/modlib/mnch2.lib
-openf___224_> Open           ${MODINSTALL9v19}/modlib/mnch3.lib
-openf___224_> Open           ${MODINSTALL9v19}/modlib/xs4.mat
-rdrrwgh_268_> Number of residue types:       21
-openf___224_> Open           ../alignment.ali
-
-Dynamically allocated memory at   amaxalignment [B,KiB,MiB]:       269985     263.657     0.257
-
-Dynamically allocated memory at   amaxalignment [B,KiB,MiB]:       285077     278.396     0.272
-
-Dynamically allocated memory at   amaxalignment [B,KiB,MiB]:       300477     293.435     0.287
-
-Dynamically allocated memory at   amaxalignment [B,KiB,MiB]:       331277     323.513     0.316
-
-Dynamically allocated memory at   amaxalignment [B,KiB,MiB]:       392877     383.669     0.375
-
-Dynamically allocated memory at   amaxalignment [B,KiB,MiB]:       516077     503.981     0.492
-
-Dynamically allocated memory at   amaxalignment [B,KiB,MiB]:       762477     744.606     0.727
-read_al_373E> Protein specified in ALIGN_CODES(i) was not found
-              in the alignment file; ALIGN_CODES(       1) =  ../10_autopsf
+>> Summary of successfully produced loop models:
+Filename                          molpdf     DOPE score
+-------------------------------------------------------
+10_added.BL00010001.pdb       1727.39954    -3858.51831
+10_added.BL00020001.pdb       4260.25684    -2772.22974
+10_added.BL00030001.pdb       8455.92285    -2152.76465
+10_added.BL00040001.pdb       4469.43066    -3818.60327
+10_added.BL00050001.pdb        809.73688    -5001.45068
+10_added.BL00060001.pdb       3467.61060    -4467.77002
+10_added.BL00070001.pdb        688.44031    -4575.52832
+10_added.BL00080001.pdb        416.89468    -4189.28857
+10_added.BL00090001.pdb       3753.21777    -4856.81006
+10_added.BL00100001.pdb       1511.12012    -4872.69287
+10_added.BL00010002.pdb       1530.37512    -4909.83447
+10_added.BL00020002.pdb       2634.13062    -3680.01172
+10_added.BL00030002.pdb       4392.11865    -2800.01636
+10_added.BL00040002.pdb       6801.50928    -2303.46191
+10_added.BL00050002.pdb       2002.39441    -4239.15918
+10_added.BL00060002.pdb       2772.38599    -3960.99951
+10_added.BL00070002.pdb       7953.52881    -2892.87500
+10_added.BL00080002.pdb       4816.48877    -3900.30688
+10_added.BL00090002.pdb        433.90308    -4180.52832
+10_added.BL00100002.pdb       1181.17029    -4390.15381
+10_added.BL00010003.pdb       4680.57617    -4393.09668
+10_added.BL00020003.pdb       2053.65039    -4497.71533
+10_added.BL00030003.pdb       3148.27612    -4598.57324
+10_added.BL00040003.pdb       3692.13159    -3625.09570
+10_added.BL00050003.pdb       8035.48779    -2672.52515
+10_added.BL00060003.pdb       9685.85449    -1005.78064
+10_added.BL00070003.pdb       2870.86816    -4562.70020
+10_added.BL00080003.pdb       1703.97205    -3967.89624
+10_added.BL00090003.pdb       6909.30273    -1736.87842
+10_added.BL00100003.pdb      10393.70312    -1303.26965
+10_added.BL00010004.pdb       3851.67285    -3502.88989
+10_added.BL00020004.pdb       3547.58301    -3877.25342
+10_added.BL00030004.pdb       4679.17139    -2973.90601
+10_added.BL00040004.pdb       1856.62122    -5287.68604
+10_added.BL00050004.pdb       2613.12549    -4169.81445
+10_added.BL00060004.pdb       1040.19617    -5237.09668
+10_added.BL00070004.pdb       7217.81934    -2332.09692
+10_added.BL00080004.pdb       2001.02979    -4521.59326
+10_added.BL00090004.pdb       4819.79004    -3016.77002
+10_added.BL00100004.pdb        524.46759    -4611.81934
+10_added.BL00010005.pdb       5585.37939    -2892.00732
+10_added.BL00020005.pdb       2434.33032    -3800.47778
+10_added.BL00030005.pdb       3450.19336    -3278.96973
+10_added.BL00040005.pdb       7387.91846    -2663.62573
+10_added.BL00050005.pdb       5657.90088    -3499.97852
+10_added.BL00060005.pdb       3418.42090    -4412.03418
+10_added.BL00070005.pdb       4358.57178    -4161.61035
+10_added.BL00080005.pdb       5629.06104    -2104.01367
+10_added.BL00090005.pdb       4813.13721    -3024.39990
+10_added.BL00100005.pdb       2688.27222    -3853.69922
