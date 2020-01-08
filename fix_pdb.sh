@@ -1,4 +1,7 @@
 #!/bin/bash
+## usage
+# source fix_pdb.sh
+# fix_pdb -p <pdb_file> -s "atomselection text" -o <output_pdb_file>
 fix_pdb () { 
     OPTIND=1
     while getopts "p:s:o:" OPTION; do
