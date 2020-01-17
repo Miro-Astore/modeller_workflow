@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -P r16
+#PBS -l storage=scratch/r16
+#PBS -q normal
+#PBS -l ncpus=96
+#PBS -m abe
+#PBS -l walltime=3:00:00
+#PBS -l mem=64GB
+#PBS -l wd
+#PBS -M yearlyboozefest@gmail.com
+
+
+
+source $HOME/.bashrc
+cd $PBS_O_WORKDIR
+cd ../10
+/home/562/ma2374/miniconda3/bin/python ../modeller_workflow/model_custom.py | tee log.log
+cd - 
