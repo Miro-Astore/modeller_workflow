@@ -1,3 +1,4 @@
+#TODO, more MDAnalysis conversion work. Work out how to use modeller to do the alignment for you.
 workflow is as follows. 
 
 1.  clean up pdb with 
