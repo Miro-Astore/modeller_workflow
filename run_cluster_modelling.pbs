@@ -14,5 +14,5 @@
 source $HOME/.bashrc
 cd $PBS_O_WORKDIR
 cd ../10
-/home/562/ma2374/miniconda3/bin/python ../modeller_workflow/model_custom.py | tee log.log
+/home/562/ma2374/miniconda3/bin/python ../modeller_workflow/model_custom.py | tee modeller.log
 cd - 

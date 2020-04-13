@@ -14,7 +14,7 @@ env.io.atom_files_directory = ['.', '../atom_files']
 
 a = MyLoop(env,
                 alnfile  = 'alignment.ali',      # alignment filename
-                knowns   = ('6m71_prot'),               # codes of the templates
+                knowns   = ('pdbfile'),               # codes of the templates
                 sequence = 'rdrp',               # code of the target
                 loop_assess_methods=assess.DOPE) # assess each loop with DOPE
 a.starting_model= 1 # index of the first model

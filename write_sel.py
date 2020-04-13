@@ -12,7 +12,6 @@ sel.write(OUT)
 
 FASTA=''
 FASTA_DICT={'ARG':'R', 'SER':'S', 'ASN':'N', 'GLU':'E', 'GLN':'Q','TRP':'W','PRO':'P','HIS':'H','HSD':'H','LEU':'L','ILE':'I','LYS':'K','ALA':'A','CYS':'C','MET':'M','THR':'T','TYR':'Y','ASP':'D','VAL':'V','PHE':'F','GLY':'G'}
-print(OUT)
 
 FASTA_OUT=open(str(OUT)[:-4] + '.fasta','w+')
 with open(OUT) as fp:
@@ -20,7 +19,6 @@ with open(OUT) as fp:
     Lines=fp.readlines()
     for line in Lines:
         cnt=1
-        print(line)
         obj = re.search('^ATOM',line)
         if obj:
             seq = re.search('ARG|SER|ASN|GLU|GLN|TRP|PRO|HIS|HSD|LEU|ILE|LYS|ALA|CYS|MET|THR|TYR|ASP|VAL|PHE|GLY',line)
