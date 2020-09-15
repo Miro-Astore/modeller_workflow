@@ -11,7 +11,7 @@ model_lines=list([])
 #read log file in reverse. assumed that run has been successful and is outputting results of scoring of each model.
 #check if line contains pattern which indicates we have read in all the scoring lines of the log file
 #only read in line if it is greater than 1 in length 
-for line in reversed(list(open("log.log"))):
+for line in reversed(list(open("modeller.log"))):
     if (re.search ('>> Summary of successfully produced',line)):
         #getting rid of dashes line and metadata line 
         model_lines=model_lines[:-2]
