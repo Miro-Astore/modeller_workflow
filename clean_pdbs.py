@@ -20,12 +20,10 @@ for i in file_list:
     chains = all_res.chainIDs
     chains =  set (chains)
     for j in chains :
-        curr_chain_CAs = all_res.select_atoms('name CA and chainID ' + str(j) ) 
-        curr_chain_all = u.select_atoms('protein and chainID ' + str(j) ) 
-        curr_chain_all.write(str(i) + '_' + str(j) + '.pdb')
-        resnames = seq1(''.join(curr_chain_CAs.resnames).capitalize())
+        curr_chain = all_res.select_atoms('chainID ' + str(j) ) 
+        resnames = seq1(''.join(curr_chain.resnames).capitalize())
         resnames= resnames + '*'
-        #resnames = ' '.join(curr_chain_CAs.resnames).capitalize()
+        #resnames = ' '.join(curr_chain.resnames).capitalize()
         fasta_name = str(i) + '_' + str(j) + '.fasta'
 
         record = SeqRecord(
@@ -36,6 +34,6 @@ for i in file_list:
         )
         records.append(record)
 
-x = SeqIO.write(records, 'all_fasta.pir', "pir")
+x = SeqIO.write(records, 'all_fasta.fasta', "fasta")
 
 

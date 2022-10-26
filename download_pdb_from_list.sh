@@ -1,6 +1,7 @@
 cat blastp_output.txt | grep \>  | awk -F_ '{print $1}'  | sed "s/>//g" > pdb_list.txt
 cwd=$(pwd)
-cd templates_pdb
+cd pdb_templates
+cat ../blastp_output.txt | grep \>  | awk '{print $1}' >  chains_list.txt
 for pdb_id in $(cat ../pdb_list.txt);
 do
 	if [ ! -f $pdb_id.pdb ] 

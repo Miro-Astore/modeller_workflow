@@ -1,11 +1,14 @@
 import numpy as np
 import sys
 import re
+import os 
 
+#USAGE python modeller_workflow.py  PDB.pdb PDB_cleaned.pdb
 
 out=open('/dev/shm/temp.pdb','w+')
 FASTA=''
 FASTA_DICT={'ARG':'R', 'SER':'S', 'ASN':'N', 'GLU':'E', 'GLN':'Q','TRP':'W','PRO':'P','HIS':'H','HSD':'H','LEU':'L','ILE':'I','LYS':'K','ALA':'A','CYS':'C','MET':'M','THR':'T','TYR':'Y','ASP':'N','VAL':'V','PHE':'F','GLY':'G'}
+
 with open(sys.argv[-1]) as fp:
 #with open('../6m71.pdb') as fp:
     line=fp.readline()
@@ -38,3 +41,4 @@ with open(sys.argv[-1]) as fp:
         cnt=cnt+1
 
 out.close()
+os.rename()
